@@ -34,8 +34,11 @@ Napi::Number functionexample::AddWrapped(const Napi::CallbackInfo &info)
 
 Napi::Object functionexample::Init(Napi::Env env, Napi::Object exports)
 {
+  // function 
   exports.Set(
       "hello", Napi::Function::New(env, functionexample::HelloWrapped));
+
+  // function
   exports.Set("add", Napi::Function::New(env, functionexample::AddWrapped));
   return exports;
 }

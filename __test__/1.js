@@ -18,4 +18,8 @@ const newFromExisting = new testAddon.ClassExample(prevInstance);
 console.log('Testing class initial value for derived instance');
 console.log(newFromExisting.getValue());
 
+
+// array
+console.log("testAddon.array.length", testAddon.array.length)
+
 module.exports = testAddon
