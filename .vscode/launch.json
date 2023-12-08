@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C++",
+            "type": "cppdbg",
+            "request": "launch",
+            // "preLaunchTask": "npm: build:dev",
+            "program": "/Users/liuchengyuan/.nvm/versions/node/v14.16.1/bin/node",
+            "args": [
+                // 调试js代码
+                "--inspect-brk",
+                "${workspaceFolder}/__test__/1.js"
+            ],
+            "stopAtEntry": true,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+        }
+    ]
+}
